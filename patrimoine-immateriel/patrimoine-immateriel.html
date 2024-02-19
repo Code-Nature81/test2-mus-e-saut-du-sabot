@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musée Saut du Tarn</title>
+</head>
+<style>
+    *, *:before, *:after 
+{ box-sizing: border-box; }
+* {
+	margin:0px;
+	padding:0px;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+}
+label .menu {
+  position: relative;
+  right: -00px;
+  top: -100px;
+  z-index: 100;
+  width: 100px;
+  height: 200px;
+  background: #393939;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 darkgoldenrod, 0 0 0 0 darkgoldenrod;
+  cursor: pointer;
+  
+}
+
+label .hamburger {
+  position: absolute;
+  top: 115px;
+  left: 20px;
+  width: 30px;
+  height: 2px;
+  background: darkgoldenrod;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+label .hamburger:after, label .hamburger:before {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: darkgoldenrod;
+}
+
+label .hamburger:before { top: -10px; }
+
+label .hamburger:after { bottom: -10px; }
+
+label input { display: none; }
+
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #393939, 0 0 0 100vh #393939;
+  border-radius: 0;
+  
+}
+
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  
+}
+
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+  
+}
+
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+  
+}
+
+label input:checked + .menu + ul { opacity: 1; }
+
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+}
+
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: #f38630;
+  text-decoration: none;
+  
+}
+header{
+    
+    background-color: rgb(39, 39, 39);
+    height: 50px;
+
+}
+
+
+#header h2{
+    color: darkgoldenrod;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:italic; 
+}
+
+#header a{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#fond img{
+    margin: auto;
+    display: block;
+    width: 25%;
+    
+}
+
+
+.container2 .box{
+    margin-top: 30px;
+    background: rgb(0, 0, 0);
+    padding:10px;
+    display: grid;
+    font-size: 20px;
+    
+    /*place-items: center;
+    text-align: center;*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    color: white;
+    transition: 0.5s;
+    
+    
+    
+
+}
+
+.container2 .box:hover{
+    /*background:rgb(18, 170, 18) ;*/
+    
+    cursor: pointer;
+}
+.container2 .box img{
+    position: relative;
+    max-width: 100px;
+    margin-bottom: 10px;
+    padding-right: 30px;
+    
+}
+
+#lab img{
+    padding-top: 10px; width: 30px; margin-left: 20px;margin-top: 5px;
+}
+
+
+@media screen and (max-width:415px) {
+    #header a{
+        margin-left: -1px;
+
+    }
+    
+}
+
+@media screen and (max-width:915px) {
+    #fond img {
+        margin-top: 10%;
+        width: 65%;
+
+    }
+
+    #lab img{
+        margin-top: 5px;
+
+    }
+    
+}
+
+
+</style>
+
+<body>
+    <header>
+        <div id="header">
+            <a href=""><img src="" style="padding-top: 10px; width: 30px;"></a>
+            <h2 style="margin-top: -8px;">Patrimoine immateriel</h2>
+
+        </div>
+
+        <label id="lab">
+            <a href="..//plan/chatgpt2.html"><img src="https://api.iconify.design/cil:arrow-circle-left.svg?color=%23b8860b" ></a>
+           
+            </label>
+      
+    </header>
+    
+</body>
+    <div id="fond">
+        <img src="patrimoine.jpg">
+    </div>
+
+    <div class="container2"><a href="son.html" style="text-decoration: none;">
+        <div class="box">
+            <div class="content">
+                <table style="text-decoration: none;">
+                    <td><img src="patrimoine2.jpg" style="border-radius:5%; width: 200px;"></td>
+                    <td><p>"Témoignages, sons et videos"</p></td>
+                    <td><img src="https://api.iconify.design/material-symbols:arrow-forward-ios-rounded.svg?color=%23ffffff" style="margin-left:90%; margin-top: 20px;"></td>
+                </table>
+            </div>
+        </div></a>
+    </div>
+    <hr size="1" width="100%" align="left" color="darkgoldenrod">
+
+    
+
+    
+</html>

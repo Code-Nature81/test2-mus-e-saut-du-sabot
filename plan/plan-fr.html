@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musée Monestiés</title>
+</head>
+<style>
+  *, *:before, *:after 
+{ box-sizing: border-box; 
+margin:0px;
+	padding:0px;}
+html, body {
+	margin: 0;
+	padding: 0;
+    overflow-x: hidden;
+    
+   
+}
+
+
+header{
+    
+    background-color: rgb(39, 39, 39);
+    height: 50px;
+
+}
+
+
+#header h2{
+    color: darkgoldenrod;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:italic; 
+    margin-top: 20px;
+}
+
+
+
+
+main{
+    display: block;
+    
+    
+}
+    h1{
+        font-size: 35px;
+        text-align: center;
+        font-style: oblique;
+        color: darkgoldenrod;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .btn {
+        display: inline;
+        position: relative;
+    }
+    .btn img {
+        position: relative;
+        top: 150px;
+        width: 20px;
+    }
+
+    .img1{
+        left: 50%; right: 50%; top: 50%; bottom: 50%;
+        transform: translate(-50%, -50%);
+        width:700px;
+        height: 350px;
+       
+        position: absolute;
+        z-index: 10;
+    }
+
+    .img4{
+        left: 50%; right: 50%; top: 50%; bottom: 50%;
+        transform: translate(-50%, -50%);
+        width:700px;
+        height: 350px;
+        margin-top: 400px;
+        
+        position: absolute;
+        z-index: 3;
+    }
+
+    .img2{
+    height: 30px;
+    position:absolute;
+    z-index: 20;
+    left: 15px;
+    margin-top: 160px;
+    
+}
+
+.btn1 {
+        display: inline;
+        position: relative;
+    }
+.btn1 img {
+        position: relative;
+        top: 100px;
+        width: 20px;
+    }
+
+.img3{
+    height: 30px;
+    position:absolute;
+    z-index: 20;
+    left: 190px;
+    margin-bottom: -50px;
+    
+}
+
+#piedpage {
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 100%;
+    background-color: #ffffff;;
+    height: 85px;
+    border: #000000 solid 1px;
+    border-bottom: #ffffff;
+    position:fixed;
+    z-index: 30;
+}
+.btnplan {
+    
+    border: 0;
+    line-height: 4;
+    padding:26px 2px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 1px;
+    margin-top: 1px;
+    color: darkgoldenrod;
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 17%;
+    background-image: url(https://api.iconify.design/teenyicons:floorplan-solid.svg?color=%23b8860b);
+    background-repeat: no-repeat;
+    background-position: 50% 13px;
+    background-size: 32px;
+    
+}
+
+.btninfo{
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: #000000;
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 17%;
+    background-image: url(https://api.iconify.design/clarity:help-info-solid.svg?color=%23000000);
+    background-repeat: no-repeat;
+    background-position: 50% 15px;
+    background-size: 28px;
+    
+    
+}
+
+.btnvillage{
+    border: 0;
+    line-height: 4;
+    padding:26px 0px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: #000000;
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 17%;
+    background-image: url(https://api.iconify.design/ant-design:slack-outlined.svg?color=%23000000);
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    background-size: 41px;
+    
+    
+}
+
+.btncollec{
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: #000000;
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 17%;
+    background-image: url(https://api.iconify.design/simple-icons:musescore.svg?color=%23000000);
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    background-size: 35px;
+    
+    
+}
+
+.btnvisite{
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: #000000;
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 17%;
+    background-image: url(https://api.iconify.design/fluent-mdl2:video-360-generic.svg?color=%23000000);
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    background-size: 35px;
+    
+    
+}
+
+.wrapper {
+text-transform: uppercase;
+background: #ececec00;
+color: #555;
+cursor:help;
+font-family: "Gill Sans", Impact, sans-serif;
+font-size: 20px;
+position: absolute;
+/*margin: -55px -55px -55px -55px;*/
+margin-top: -915px;
+margin-left: -25px;
+padding: 15px 20px;
+text-align: center;
+width: 200px;
+z-index: 20;
+/*-webkit-transform: translateZ(0); /* webkit flicker fix */
+-webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+}
+
+.wrapper .tooltip {
+background: #636364;
+bottom: 100%;
+color: #fff;
+font-size: 15px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+display: block;
+left: -20px;
+margin-bottom: 3px;
+opacity: 0;
+padding: 10px;
+pointer-events:none;
+position: absolute;
+width: 100%;
+-webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+   -o-transform: translateY(10px);
+    transform: translateY(10px);
+-webkit-transition: all .25s ease-out;
+  -moz-transition: all .25s ease-out;
+  -ms-transition: all .25s ease-out;
+   -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+   -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+}
+
+/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+.wrapper .tooltip:before {
+bottom: -20px;
+content: " ";
+display: block;
+height: 20px;
+left: 0;
+position: absolute;
+width: 100%;
+}
+
+/* CSS Triangles - see Trevor's post */
+.wrapper .tooltip:after {
+border-left: solid transparent 10px;
+border-right: solid transparent 10px;
+border-top: solid #636364 10px;
+bottom: -10px;
+content: " ";
+height: 0;
+left: 50%;
+margin-left: 0px;
+position: absolute;
+width: 0;
+}
+
+.wrapper:hover .tooltip {
+opacity: 1;
+pointer-events: auto;
+-webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+   -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .wrapper .tooltip {
+display: none;
+}
+
+.lte8 .wrapper:hover .tooltip {
+display: block;
+}
+
+.wrapper1 {
+text-transform: uppercase;
+background: #ececec00;
+color: #555;
+cursor:help;
+font-family: "Gill Sans", Impact, sans-serif;
+font-size: 20px;
+position: absolute;
+/*margin: -55px -55px -55px -55px;*/
+margin-top: -1085px;
+margin-left: -95px;
+padding: 15px 20px;
+text-align: center;
+width: 200px;
+z-index: 20;
+/*-webkit-transform: translateZ(0); /* webkit flicker fix */
+-webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+}
+
+.wrapper1 .tooltip1 {
+background: #636364;
+bottom: 100%;
+color: #fff;
+font-size: 15px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+display: block;
+left: -20px;
+margin-bottom: 3px;
+opacity: 0;
+padding: 10px;
+pointer-events:none;
+position: absolute;
+width: 100%;
+-webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+   -o-transform: translateY(10px);
+    transform: translateY(10px);
+-webkit-transition: all .25s ease-out;
+  -moz-transition: all .25s ease-out;
+  -ms-transition: all .25s ease-out;
+   -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+   -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+}
+
+/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+.wrapper1 .tooltip1:before {
+bottom: -20px;
+content: " ";
+display: block;
+height: 20px;
+left: 0;
+position: absolute;
+width: 100%;
+}
+
+/* CSS Triangles - see Trevor's post */
+.wrapper1 .tooltip1:after {
+border-left: solid transparent 10px;
+border-right: solid transparent 10px;
+border-top: solid #636364 10px;
+bottom: -10px;
+content: " ";
+height: 0;
+left: 50%;
+margin-left: 0px;
+position: absolute;
+width: 0;
+}
+
+.wrapper1:hover .tooltip1 {
+opacity: 1;
+pointer-events: auto;
+-webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+   -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .wrapper1 .tooltip1 {
+display: none;
+}
+
+.lte8 .wrapper1:hover .tooltip1 {
+display: block;
+}
+
+.wrapper2 {
+    text-transform: uppercase;
+    background: #ececec00;
+    color: #555;
+    cursor:help;
+    font-family: "Gill Sans", Impact, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    /*margin: -55px -55px -55px -55px;*/
+    margin-top: -1085px;
+    margin-left: 155px;
+    padding: 15px 20px;
+    text-align: center;
+    width: 200px;
+    z-index: 20;
+    /*-webkit-transform: translateZ(0); /* webkit flicker fix */
+    -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+    }
+    
+    .wrapper2 .tooltip2 {
+    background: #636364;
+    bottom: 100%;
+    color: #fff;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    left: -20px;
+    margin-bottom: 3px;
+    opacity: 0;
+    padding: 10px;
+    pointer-events:none;
+    position: absolute;
+    width: 100%;
+    -webkit-transform: translateY(10px);
+      -moz-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+       -o-transform: translateY(10px);
+        transform: translateY(10px);
+    -webkit-transition: all .25s ease-out;
+      -moz-transition: all .25s ease-out;
+      -ms-transition: all .25s ease-out;
+       -o-transition: all .25s ease-out;
+        transition: all .25s ease-out;
+    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+      -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+      -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+       -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    }
+    
+    /* This bridges the gap so you can mouse into the tooltip without it disappearing */
+    .wrapper2 .tooltip2:before {
+    bottom: -20px;
+    content: " ";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    }
+    
+    /* CSS Triangles - see Trevor's post */
+    .wrapper2 .tooltip2:after {
+    border-left: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-top: solid #636364 10px;
+    bottom: -10px;
+    content: " ";
+    height: 0;
+    left: 50%;
+    margin-left: 0px;
+    position: absolute;
+    width: 0;
+    }
+    
+    .wrapper2:hover .tooltip2 {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    
+    /* IE can just show/hide with no transition */
+    .lte8 .wrapper2 .tooltip2 {
+    display: none;
+    }
+    
+    .lte8 .wrapper2:hover .tooltip2 {
+    display: block;
+    }
+
+    .wrapper3 {
+        text-transform: uppercase;
+        background: #ececec00;
+        color: #555;
+        cursor:help;
+        font-family: "Gill Sans", Impact, sans-serif;
+        font-size: 20px;
+        position: absolute;
+        /*margin: -55px -55px -55px -55px;*/
+        margin-top: -555px;
+        margin-left: 100px;
+        padding: 15px 20px;
+        text-align: center;
+        width: 200px;
+        z-index: 20;
+        /*-webkit-transform: translateZ(0); /* webkit flicker fix */
+        -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+        }
+        
+        .wrapper3 .tooltip3 {
+        background: #636364;
+        bottom: 100%;
+        color: #fff;
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        display: block;
+        left: -20px;
+        margin-bottom: 3px;
+        opacity: 0;
+        padding: 10px;
+        pointer-events:none;
+        position: absolute;
+        width: 100%;
+        -webkit-transform: translateY(10px);
+          -moz-transform: translateY(10px);
+          -ms-transform: translateY(10px);
+           -o-transform: translateY(10px);
+            transform: translateY(10px);
+        -webkit-transition: all .25s ease-out;
+          -moz-transition: all .25s ease-out;
+          -ms-transition: all .25s ease-out;
+           -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+        -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+          -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+          -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+           -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+        }
+        
+        /* This bridges the gap so you can mouse into the tooltip without it disappearing */
+        .wrapper3 .tooltip3:before {
+        bottom: -20px;
+        content: " ";
+        display: block;
+        height: 20px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        }
+        
+        /* CSS Triangles - see Trevor's post */
+        .wrapper3 .tooltip3:after {
+        border-left: solid transparent 10px;
+        border-right: solid transparent 10px;
+        border-top: solid #636364 10px;
+        bottom: -10px;
+        content: " ";
+        height: 0;
+        left: 50%;
+        margin-left: 0px;
+        position: absolute;
+        width: 0;
+        }
+        
+        .wrapper3:hover .tooltip3 {
+        opacity: 1;
+        pointer-events: auto;
+        -webkit-transform: translateY(0px);
+          -moz-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+           -o-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+        
+        /* IE can just show/hide with no transition */
+        .lte8 .wrapper3 .tooltip3 {
+        display: none;
+        }
+        
+        .lte8 .wrapper3:hover .tooltip3 {
+        display: block;
+        }
+        .wrapper4 {
+            text-transform: uppercase;
+            background: #ececec00;
+            color: #555;
+            cursor:help;
+            font-family: "Gill Sans", Impact, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            /*margin: -55px -55px -55px -55px;*/
+            margin-top: -695px;
+            margin-left: 100px;
+            padding: 15px 20px;
+            text-align: center;
+            width: 200px;
+            z-index: 20;
+            /*-webkit-transform: translateZ(0); /* webkit flicker fix */
+            -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+            }
+            
+            .wrapper4 .tooltip4 {
+            background: #636364;
+            bottom: 100%;
+            color: #fff;
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: block;
+            left: -20px;
+            margin-bottom: 3px;
+            opacity: 0;
+            padding: 10px;
+            pointer-events:none;
+            position: absolute;
+            width: 100%;
+            -webkit-transform: translateY(10px);
+              -moz-transform: translateY(10px);
+              -ms-transform: translateY(10px);
+               -o-transform: translateY(10px);
+                transform: translateY(10px);
+            -webkit-transition: all .25s ease-out;
+              -moz-transition: all .25s ease-out;
+              -ms-transition: all .25s ease-out;
+               -o-transition: all .25s ease-out;
+                transition: all .25s ease-out;
+            -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+              -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+              -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+               -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+            }
+            
+            /* This bridges the gap so you can mouse into the tooltip without it disappearing */
+            .wrapper4 .tooltip4:before {
+            bottom: -20px;
+            content: " ";
+            display: block;
+            height: 20px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            }
+            
+            /* CSS Triangles - see Trevor's post */
+            .wrapper4 .tooltip4:after {
+            border-left: solid transparent 10px;
+            border-right: solid transparent 10px;
+            border-top: solid #636364 10px;
+            bottom: -10px;
+            content: " ";
+            height: 0;
+            left: 50%;
+            margin-left: 0px;
+            position: absolute;
+            width: 0;
+            }
+            
+            .wrapper4:hover .tooltip4 {
+            opacity: 1;
+            pointer-events: auto;
+            -webkit-transform: translateY(0px);
+              -moz-transform: translateY(0px);
+              -ms-transform: translateY(0px);
+               -o-transform: translateY(0px);
+                transform: translateY(0px);
+            }
+            
+            /* IE can just show/hide with no transition */
+            .lte8 .wrapper4 .tooltip4 {
+            display: none;
+            }
+            
+            .lte8 .wrapper4:hover .tooltip4 {
+            display: block;
+            }
+footer{
+    text-align: center;
+    position: fixed;
+    z-index: 30;
+}
+
+@media screen and (min-width:200px) and (max-width:600px) {
+
+    main{
+        margin-left: 40px;
+    }
+
+    html,body{
+        height: 2000px;
+    }
+
+    h3{
+        margin-top:50px ;
+    }
+    .img1{
+        margin-top: 70px;
+        width: 570px;
+        height: 400px;
+        rotate: 90deg;
+        margin-right: 0px;
+        margin-left: -482px;
+
+    }
+
+    .img4{
+        margin-top: 715px;
+        width: 570px;
+        height: 400px;
+        rotate: 90deg;
+        margin-right: 0px;
+        margin-left: -482px;
+        margin-bottom: -100px;
+
+    }
+
+    .wrapper {
+        text-transform: uppercase;
+        background: #ececec00;
+        color: #555;
+        cursor:help;
+        font-family: "Gill Sans", Impact, sans-serif;
+        font-size: 20px;
+        position: absolute;
+        /*margin: -55px -55px -55px -55px;*/
+        margin-top: -1100px;
+        margin-left: -20px;
+        padding: 15px 20px;
+        text-align: center;
+        width: 200px;
+        z-index: 20;
+        /*-webkit-transform: translateZ(0); /* webkit flicker fix */
+        -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+        rotate: 90deg;
+        }
+        .wrapper1 {
+            text-transform: uppercase;
+            background: #ececec00;
+            color: #555;
+            cursor:help;
+            font-family: "Gill Sans", Impact, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            /*margin: -55px -55px -55px -55px;*/
+            margin-top: -1100px;
+            margin-left: 150px;
+            padding: 15px 20px;
+            text-align: center;
+            width: 200px;
+            z-index: 20;
+            /*-webkit-transform: translateZ(0); /* webkit flicker fix */
+            -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+            rotate: 90deg;
+            }
+
+            .wrapper2 {
+                text-transform: uppercase;
+                background: #ececec00;
+                color: #555;
+                cursor:help;
+                font-family: "Gill Sans", Impact, sans-serif;
+                font-size: 20px;
+                position: absolute;
+                /*margin: -55px -55px -55px -55px;*/
+                margin-top: -900px;
+                margin-left: 150px;
+                padding: 15px 20px;
+                text-align: center;
+                width: 200px;
+                z-index: 20;
+                /*-webkit-transform: translateZ(0); /* webkit flicker fix */
+                -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+                rotate: 90deg;
+                }
+                .wrapper3 {
+                    text-transform: uppercase;
+                    background: #ececec00;
+                    color: #555;
+                    cursor:help;
+                    font-family: "Gill Sans", Impact, sans-serif;
+                    font-size: 20px;
+                    position: absolute;
+                    /*margin: -55px -55px -55px -55px;*/
+                    margin-top: -300px;
+                    margin-left: 150px;
+                    padding: 15px 20px;
+                    text-align: center;
+                    width: 200px;
+                    z-index: 20;
+                    /*-webkit-transform: translateZ(0); /* webkit flicker fix */
+                    -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+                    rotate: 90deg;
+                    }
+
+                    .wrapper4 {
+                        text-transform: uppercase;
+                        background: #ececec00;
+                        color: #555;
+                        cursor:help;
+                        font-family: "Gill Sans", Impact, sans-serif;
+                        font-size: 20px;
+                        position: absolute;
+                        /*margin: -55px -55px -55px -55px;*/
+                        margin-top: -300px;
+                        margin-left: -20px;
+                        padding: 15px 20px;
+                        text-align: center;
+                        width: 200px;
+                        z-index: 20;
+                        /*-webkit-transform: translateZ(0); /* webkit flicker fix */
+                        -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+                        rotate: 90deg;
+                        }
+}
+
+@media screen and (max-width:410px) and (min-width:359px) {
+
+main{
+    margin-left: 8%;
+    margin-top: 20px;
+    
+}
+.img1{
+    margin-top: 260px;
+}
+.img4{
+    margin-top: 880px;
+}
+}
+
+@media screen and (max-width:413px) and (min-width:411px) {
+    main{
+        margin-left: 8%;
+        margin-top: 20px;
+        
+    }
+    .img1{
+        margin-top: 100px;
+    }
+    }
+    @media screen and (max-width:415px) and (min-width:413px) {
+        main{
+            margin-left: 8%;
+            margin-top: 20px;
+            
+        }
+        .img1{
+            margin-top: 260px;
+        }
+        .img4{
+            margin-top: 880px;
+        }
+        }
+    
+
+
+
+@media screen and (max-width:913px) and (min-width:767px) {
+
+main{
+    margin-left: 28%;
+    
+}
+h1{
+    font-size: 50px;
+}
+
+
+}
+ @media screen and (max-width:767px) and (min-width:488px) {
+    main{
+        margin-left: 20%;
+    }
+    
+ }
+ @media screen and (max-width:1281px) and (min-width:1023px) {
+
+main{
+    margin-left: 35%;
+    
+}
+
+h1{
+    font-size: 50px;
+}
+}
+
+@media screen and  (min-width:1283px) {
+
+main{
+    margin-left: 38%;
+    
+}
+
+.img1{
+    margin-top: 80px;
+}
+
+.img4{
+    margin-top: 480px;
+}
+
+h1{
+    font-size: 65px;
+}
+}
+@media screen and (max-width:1024px) and (min-width:912px) {
+
+main{
+    margin-left: 33%;
+    
+}
+
+h1{
+    font-size: 55px;
+}
+}   
+
+
+
+</style>
+<body>
+    <header>
+        <div id="header">
+            <a href=""><img src="" style=" width: 30px; margin-left: 10px;margin-top: 10px;"></a>
+            <h2 style="margin-top: -10px;">Plan</h2>
+
+        </div>
+
+   
+
+  
+    </header>
+    <h1>Musée Saut du Tarn</h1>
+    
+<main>
+    
+    <img class="img1" src="PLAN.png"  border="0" />
+
+   
+    
+    <img class="img4" src="PLAN2.png"  border="0"  /><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <div class="wrapper">
+        <img src="https://api.iconify.design/heroicons:information-circle-solid.svg?color=%23a1701b" style="width: 25px;">
+        <div class="tooltip"><a href="..//collection-hydro/collec-hydroélectrique.html" style="text-decoration: none; color: #fff;">Collection centrale hydroélectrique et ses équipements &nbsp;&nbsp;></a></div>
+    </div>
+
+    <div class="wrapper1">
+        <img src="https://api.iconify.design/heroicons:information-circle-solid.svg?color=%23a1701b" style="width: 25px;">
+        <div class="tooltip1"><a href="..//patrimoine-immateriel/patrimoine-immateriel.html" style="text-decoration: none; color: #fff;">Patrimoine immateriel&nbsp;></a></div>
+    </div>
+
+    <div class="wrapper2">
+        <img src="https://api.iconify.design/heroicons:information-circle-solid.svg?color=%23a1701b" style="width: 25px;">
+        <div class="tooltip2"><a href="..//métiers artisants locaux/métiers.html" style="text-decoration: none; color: #fff;">Métiers artisants locaux &nbsp;&nbsp;></a></div>
+    </div>
+
+    <div class="wrapper3">
+        <img src="https://api.iconify.design/heroicons:information-circle-solid.svg?color=%23a1701b" style="width: 25px;">
+        <div class="tooltip3"><a href="..//équipement-ouvrier/équipements.html" style="text-decoration: none; color: #fff;">Equipements de l'ouvrier&nbsp;&nbsp;></a></div>
+    </div>
+
+    <div class="wrapper4">
+        <img src="https://api.iconify.design/heroicons:information-circle-solid.svg?color=%23a1701b" style="width: 25px;">
+        <div class="tooltip4"><a href="..//productions/productions.html" style="text-decoration: none; color: #fff;">Productions du Saut du Tarn&nbsp;&nbsp;></a></div>
+    </div>
+       <!-- <div class="btn1">
+            <a href="https://www.tourisme-tarn.com/patrimoine-culturel/musee-bajen-vega/"><img class="img3" src="cercle-orange.svg" alt=""></a> 
+        </div>-->
+       
+    </main>
+    
+
+    <footer>
+        <div id="piedpage">
+            <a href="plan-fr.html"><button class="btnplan" type="button" style="cursor: pointer;margin-right:-15px;">Plan</button></a>
+            <a href="../page-transition-collection.html"><button class="btncollec" type="button" style="cursor: pointer; width: 23%; padding-left: 12px;">Historique</button></a>
+            <a href="../testMp3d.html"><button class="btnvisite" type="button"style="cursor: pointer;">Visite</button></a>
+            <a href="../infos.html"><button class="btninfo" type="button"style="cursor: pointer;">Infos</button></a>
+            <a href="../village.html"><button class="btnvillage" type="button" style="cursor: pointer; margin-right:9px;">Evenement</button></a>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

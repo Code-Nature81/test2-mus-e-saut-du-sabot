@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 60vh; /* Ajustez la hauteur selon vos besoins */
+        }
+
+        .button-wrapper {
+            position: absolute;
+            box-sizing: border-box;
+            opacity: 0.7;
+        }
+
+        #wrapper1 {
+            top: 10%;
+            left: 10%;
+        }
+
+        #wrapper2 {
+            top: 40%;
+            left: 40%;
+        }
+
+        #wrapper3 {
+            bottom: 5%;
+            right: 5%;
+        }
+
+        .button-wrapper a {
+            text-decoration: none; /* Supprime le soulignement du lien */
+            position: relative; /* Ajout pour positionner le tooltip */
+        }
+
+        .button-wrapper button {
+            border: 2px solid #000000;
+            background-color: transparent;
+            color: #000000;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .button-wrapper button:hover::after {
+            content: attr(title);
+            background-color: #000;
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 1;
+        }
+
+        .button-wrapper button:hover::after {
+            opacity: 1;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width: 768px) {
+            .image-container {
+                height: 40vh; /* Ajustez la hauteur pour les écrans plus petits */
+            }
+
+            .button-wrapper {
+                font-size: 10px; /* Ajustez la taille de la police pour les écrans plus petits */
+            }
+
+            .button-wrapper button {
+                padding: 6px 12px;
+            }
+
+            #wrapper1 {
+                top: 5%;
+                left: 5%;
+            }
+
+            #wrapper2 {
+                top: 30%;
+                left: 30%;
+            }
+
+            #wrapper3 {
+                bottom: 3%;
+                right: 3%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="plan4.png" alt="Votre image">
+
+        <div class="button-wrapper" id="wrapper1">
+            <a href="..//collection-hydro/collec-hydroélectrique.html"><button title="Wrapper 1"></button></a>
+        </div>
+        <div class="button-wrapper" id="wrapper2">
+            <a href="page2.html"><button title="Wrapper 2"></button></a>
+        </div>
+        <div class="button-wrapper" id="wrapper3">
+            <a href="page3.html"><button title="Wrapper 3"></button></a>
+        </div>
+    </div>
+
+    <script>
+        // Ajoutez le script pour rediriger lorsque le tooltip est cliqué
+        document.addEventListener('DOMContentLoaded', function () {
+            const tooltips = document.querySelectorAll('.button-wrapper button');
+            
+            tooltips.forEach(tooltip => {
+                tooltip.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    window.location.href = this.parentNode.href;
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musée Saut du Tarn</title>
+</head>
+<style>
+
+*, *:before, *:after 
+{ box-sizing: border-box; }
+* {
+	margin:0px;
+	padding:0px;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+
+
+
+header{
+    
+    background-color: rgb(39, 39, 39);
+    height: 100px;
+
+}
+
+
+#header h2{
+    color: darkgoldenrod;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:italic; 
+}
+
+#header a{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#fond img{
+    margin: auto;
+    display: block;
+    width: 45%;
+    margin-top: 20px;
+    
+}
+
+
+.container2 .box{
+    margin-top: 30px;
+    background: rgb(0, 0, 0);
+    padding:10px;
+    display: grid;
+    font-size: 20px;
+    
+    /*place-items: center;
+    text-align: center;*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    color: white;
+    transition: 0.5s;
+    
+    
+    
+
+}
+
+.container2 .box:hover{
+    /*background:rgb(18, 170, 18) ;*/
+    
+    cursor: pointer;
+}
+.container2 .box img{
+    position: relative;
+    max-width: 100px;
+    margin-bottom: 10px;
+    padding-right: 30px;
+    
+}
+
+#lab img{
+    padding-top: 10px; width: 30px; margin-left: 20px;margin-top: 5px;
+}
+
+
+@media screen and ( min-width:200px) and (max-width:379px){
+    #header a{
+        margin-left: -1px;
+
+    }
+    header{
+        height: 130px;
+    }
+
+    #lab img{
+        margin-top: -17px;
+
+    }
+    
+}
+
+@media screen and (max-width:915px) and ( min-width:350px) {
+    #fond img {
+        margin-top: 10%;
+        width: 65%;
+
+    }
+
+    header{
+        height: 110px;
+    }
+
+    #header h2{
+        font-size: 20px;
+    }
+
+     #lab img{
+        margin-top: -17px;
+
+    }
+    
+}
+
+
+</style>
+
+<body>
+    <header>
+        <div id="header">
+            <a href=""><img src="" style="padding-top: 10px; width: 30px;"></a>
+            <h2 style="margin-top: -8px;">Collection centrale hydroélectrique <br>et<br> ses équipements</h2>
+
+        </div>
+
+        <label id="lab">
+            <a href="..//plan/chatgpt2.html"><img src="https://api.iconify.design/cil:arrow-circle-left.svg?color=%23b8860b" ></a>
+           
+            </label>
+    </header>
+    
+</body>
+    <div id="fond">
+        <img src="collec-centrale.jpg">
+    </div>
+
+    <div class="container2"><a href="disjoncteur.html" style="text-decoration: none;">
+        <div class="box">
+            <div class="content">
+                <table style="text-decoration: none;">
+                    <td><img src="DISJONCTEUR_FRANCOIS_PONS.jpg" style="border-radius:5%; height: 105px;"></td>
+                    <td style=" width:180px;"><p>Disjoncteur 400V CC</p></td>
+                    <td style="padding-left:50px;"><img src="https://api.iconify.design/material-symbols:arrow-forward-ios-rounded.svg?color=%23ffffff" style="padding-left:90%; margin-top: 20px;"></td>
+                </table>
+            </div>
+        </div></a>
+    </div>
+    <hr size="1" width="100%" align="left" color="darkgoldenrod">
+
+    <div class="container2"><a href="colonne-synchronisation.html" style="text-decoration: none;">
+        <div class="box">
+            <div class="content">
+                <table style="text-decoration: none;">
+                    <td><img src="1.Colonne-de-synchronisation.jpg" style="border-radius:5%;"></td>
+                    <td style=" width:180px;"><p>Colonne de synchronisation</p></td>
+                    <td style="padding-left:50px;"><img src="https://api.iconify.design/material-symbols:arrow-forward-ios-rounded.svg?color=%23ffffff" style="padding-left:90%; margin-top: 20px;"></td>
+                </table>
+            </div>
+        </div></a>
+    </div>
+    <hr size="1" width="100%" align="left" color="darkgoldenrod">
+
+    <div class="container2"><a href="ohmmetre.html" style="text-decoration: none;">
+        <div class="box">
+            <div class="content">
+                <table style="text-decoration: none;">
+                    <td><img src="3.APPAREIL-DE-MESURE-FRANCOIS_PONS.jpg" style="border-radius:5%;"></td>
+                    <td style=" width:180px;"><p>Ohmmètre</p></td>
+                    <td style="padding-left:50px;"><img src="https://api.iconify.design/material-symbols:arrow-forward-ios-rounded.svg?color=%23ffffff" style="padding-left:90%; margin-top: 20px;"></td>
+                </table>
+            </div>
+        </div></a>
+    </div>
+    <hr size="1" width="100%" align="left" color="darkgoldenrod">
+
+    <div class="container2"><a href="Dynamo.html" style="text-decoration: none;">
+        <div class="box">
+            <div class="content">
+                <table style="text-decoration: none;">
+                    <td><img src="DYNAMO-DE╠uTAIL.jpg" style="border-radius:5%;"></td>
+                    <td style=" width:180px;"><p>Dynamo</p></td>
+                    <td style="padding-left:50px;"><img src="https://api.iconify.design/material-symbols:arrow-forward-ios-rounded.svg?color=%23ffffff" style="padding-left:90%; margin-top: 20px;"></td>
+                </table>
+            </div>
+        </div></a>
+    </div>
+    <hr size="1" width="100%" align="left" color="darkgoldenrod">
+
+    <div class="container2"><a href="appareil-mesure.html" style="text-decoration: none;">
+        <div class="box">
+            <div class="content">
+                <table style="text-decoration: none;">
+                    <td><img src="2.APPAREIL-de-MESURE_PIOCH.jpg" style="border-radius:5%;"></td>
+                    <td style=" width:180px;"><p>Appareil de mesure</p></td>
+                    <td style="padding-left:50px;"><img src="https://api.iconify.design/material-symbols:arrow-forward-ios-rounded.svg?color=%23ffffff" style="padding-left:90%; margin-top: 20px;"></td>
+                </table>
+            </div>
+        </div></a>
+    </div>
+    <hr size="1" width="100%" align="left" color="darkgoldenrod">
+    <div class="container2"><a href="scaphandrier.html" style="text-decoration: none;">
+        <div class="box">
+            <div class="content">
+                <table style="text-decoration: none;" >
+                    <td><img src="5.CASQUE-DE-SCAPHANDRE_FRANCOIS_PONs-1.jpg" style="border-radius:5%;"></td>
+                    <td style=" width:180px;"><p>Le scaphandrier</p></td>
+                    <td style="padding-left:50px;"><img src="https://api.iconify.design/material-symbols:arrow-forward-ios-rounded.svg?color=%23ffffff" style="padding-left:90%; margin-top: 20px;"></td>
+                </table>
+            </div>
+        </div></a>
+    </div>
+    <hr size="1" width="100%" align="left" color="darkgoldenrod">
+
+    <div class="container2"><a href="convertisseur.html" style="text-decoration: none;">
+        <div class="box">
+            <div class="content">
+                <table style="text-decoration: none;" >
+                    <td><img src="6.Detail-du-convertisseur_Pioch.jpg" style="border-radius:5%;"></td>
+                    <td style=" width:180px;"><p>Convertisseur</p></td>
+                    <td style="padding-left:50px;"><img src="https://api.iconify.design/material-symbols:arrow-forward-ios-rounded.svg?color=%23ffffff" style="padding-left:90%; margin-top: 20px;"></td>
+                </table>
+            </div>
+        </div></a>
+    </div>
+    <hr size="1" width="100%" align="left" color="darkgoldenrod">
+</html>
