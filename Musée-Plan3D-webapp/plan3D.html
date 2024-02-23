@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visite virtuelle- Musée</title>
+</head>
+<style>
+    html, body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+header{
+    background-color: rgb(39, 39, 39);
+    height: 50px;
+
+}
+
+
+#header h2{
+    color: darkgoldenrod;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:italic; 
+    margin-top: -35px;
+    z-index: 3;
+    
+}
+
+iframe{
+    position: absolute;
+top: 45px;
+left: 0;
+width: 100%;
+height: 80%;
+}
+
+#piedpage {
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 100%;
+    background-color: #000000;;
+    height: 85px;
+    border: #000000 solid 1px;
+    border-bottom: #000000;
+}
+.btnplan {
+    
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: darkgoldenrod;
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 17%;
+    background-image: url(https://api.iconify.design/teenyicons:floorplan-solid.svg?color=%23b8860b);
+    background-repeat: no-repeat;
+    background-position: 50% 13px;
+    background-size: 32px;
+    
+}
+
+.btninfo{
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: #ffffff;
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 17%;
+    background-image: url(https://api.iconify.design/clarity:help-info-solid.svg?color=%23ffffff);
+    background-repeat: no-repeat;
+    background-position: 50% 15px;
+    background-size: 28px;
+    
+    
+}
+
+.btnvillage{
+    border: 0;
+    line-height: 4;
+    padding:26px 0px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: rgb(255, 255, 255);
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 17%;
+    background-image: url(https://api.iconify.design/ant-design:slack-outlined.svg?color=%23ffffff);
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    background-size: 41px;
+    
+    
+}
+
+.btncollec{
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: #ffffff;
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 17%;
+    background-image: url(https://api.iconify.design/simple-icons:musescore.svg?color=%23ffffff);
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    background-size: 35px;
+    
+    
+}
+
+.btnvisite{
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: rgb(255, 255, 255);
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 17%;
+    background-image: url(https://api.iconify.design/fluent-mdl2:video-360-generic.svg?color=%23ffffff);
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    background-size: 35px;
+    
+    
+}
+
+
+footer{
+    text-align: center;
+}
+
+</style>
+<body>
+
+    <header>
+        <div id="header">
+            <a href="../plan/chatgpt2 - Copie.html" style="color:#ffffff; margin-left:2%; text-decoration:none;">Plan 2D<img src="https://api.iconify.design/cil:arrow-circle-left.svg?color=%23ffffff" style="padding-top: 10px; width: 30px;margin-left:1%;"></a>
+            <h2><span translate="no">Plan 3D</span></h2>
+
+        </div>
+    </header>
+    <iframe width='753' height='300' src='https://www.codenature.fr//ok-blender-plan-sautdusabot///blender-plan/index.htm' frameborder='0'  allow='xr-spatial-tracking'></iframe>
+
+
+    <footer>
+        <div id="piedpage">
+            <a href=".//plan3D.html"><button class="btnplan" type="button" style="cursor: pointer; margin-right:-15px;">Plan</button></a>
+            <a href="page-transition-collection.html"><button class="btncollec" type="button" style="cursor: pointer; width: 23%; padding-left: 12px;">Historique</button></a>
+            <a href="testMp3d.html"><button class="btnvisite" type="button"style="cursor: pointer;">Visite</button></a>
+            <a href="infos.html"><button class="btninfo" type="button"style="cursor: pointer;">Infos</button></a>
+            <a href="village.html"><button class="btnvillage" type="button" style="cursor: pointer; margin-right:9px;">Evenement</button></a>
+        </div>
+    </footer>
+</body>
+</html>

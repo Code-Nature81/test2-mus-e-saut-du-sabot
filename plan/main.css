@@ -1,0 +1,300 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    
+}
+
+
+
+
+header{
+    margin-top: 0;
+    background-color: rgb(39, 39, 39);
+    height: 50px;
+
+}
+
+
+#header h2{
+    color: darkgoldenrod;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:italic; 
+    margin-top: 20px;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+    
+}
+
+.image2-container2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 150px;
+
+    
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+#image2 {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.button {
+    position: absolute;
+    font-size: 24px; 
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+#bouton1 {
+    top: 19%;
+    left: 11%;
+}
+
+#bouton2 {
+    top: 13%;
+    right: 36%;
+}
+
+#bouton3 {
+    bottom: 28%;
+    right: 15%;
+}
+
+#bouton4{
+    top: 32%;
+    right:54%;
+
+}
+
+#bouton5{
+    top: 68%;
+    right: 6%;
+}
+
+
+
+
+footer{
+    text-align: center;
+    position: fixed;
+    z-index: 30;
+}
+
+#piedpage {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    background-color: #ffffff;;
+    height: 85px;
+    border: #000000 solid 1px;
+    border-bottom: #ffffff;
+    position:fixed;
+    z-index: 30;
+}
+
+.btnplan3D{
+    margin-left: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bold;
+    width: 70px;
+    height: 30px;
+
+}
+.btnplan {
+   
+    border: 0;
+    line-height: 4;
+    padding:26px 2px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 1px;
+    margin-top: 1px;
+    color: darkgoldenrod;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 17%;
+    background-image: url(https://api.iconify.design/teenyicons:floorplan-solid.svg?color=%23b8860b);
+    background-repeat: no-repeat;
+    background-position: 50% 13px;
+    background-size: 32px;
+    
+}
+
+.btninfo{
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: #000000;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 17%;
+    background-image: url(https://api.iconify.design/clarity:help-info-solid.svg?color=%23000000);
+    background-repeat: no-repeat;
+    background-position: 50% 15px;
+    background-size: 28px;
+    
+    
+}
+
+.btnvillage{
+    border: 0;
+    line-height: 4;
+    padding:26px 0px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: #000000;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 17%;
+    background-image: url(https://api.iconify.design/ant-design:slack-outlined.svg?color=%23000000);
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    background-size: 41px;
+    
+    
+}
+
+.btncollec{
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: #000000;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 17%;
+    background-image: url(https://api.iconify.design/simple-icons:musescore.svg?color=%23000000);
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    background-size: 35px;
+    
+    
+}
+
+.btnvisite{
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: #000000;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 17%;
+    background-image: url(https://api.iconify.design/fluent-mdl2:video-360-generic.svg?color=%23000000);
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    background-size: 35px;
+    
+    
+}
+
+@media screen and (max-width:481px) and (min-width:319px) {
+
+    #bouton1 {
+        top: 17%;
+        left: 8%;
+    }
+    #bouton1 {
+        -webkit-top: 17%;
+        -webkit-left: 11%;
+    }
+    
+    #bouton2 {
+        top: 10%;
+        right: 34%;
+    }
+    #bouton2 {
+        -webkit-top: 8%;
+        -webkit-left: 11%;
+    }
+    #bouton3 {
+        bottom: 25%;
+        right: 12%;
+    }
+
+    #bouton4{
+        top: 27%;
+        right:50%;
+
+    }
+
+    #bouton5{
+        top: 65%;
+        right: 3%;
+    }
+    
+}
+
+@media screen and (max-width:318px)  {
+    #bouton1 {
+        top: 16%;
+        left: 7%;
+    }
+   
+    
+    #bouton2 {
+        top: 10%;
+        right: 34%;
+    }
+    
+    #bouton3 {
+        bottom: 25%;
+        right: 12%;
+    }
+
+    #bouton4{
+        top: 27%;
+        right:50%;
+
+    }
+
+    #bouton5{
+        top: 62%;
+        right: 1%;
+    }
+
+
+}
