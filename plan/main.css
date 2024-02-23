@@ -67,12 +67,12 @@ header{
 }
 
 #bouton1 {
-    top: 26%;
+    top: 19%;
     left: 11%;
 }
 
 #bouton2 {
-    top: 21%;
+    top: 13%;
     right: 36%;
 }
 
@@ -234,16 +234,16 @@ footer{
 @media screen and (max-width:481px) and (min-width:319px) {
 
     #bouton1 {
-        top: 28%;
-        left: 9%;
+        top: 17%;
+        left: 8%;
     }
     #bouton1 {
-        -webkit-top: 26%;
+        -webkit-top: 17%;
         -webkit-left: 11%;
     }
     
     #bouton2 {
-        top: 24%;
+        top: 10%;
         right: 34%;
     }
     #bouton2 {
@@ -270,18 +270,18 @@ footer{
 
 @media screen and (max-width:318px)  {
     #bouton1 {
-        top: 32%;
+        top: 16%;
         left: 7%;
     }
    
     
     #bouton2 {
-        top: 29%;
-        right: 30%;
+        top: 10%;
+        right: 34%;
     }
     
     #bouton3 {
-        bottom: 18%;
+        bottom: 25%;
         right: 12%;
     }
 
