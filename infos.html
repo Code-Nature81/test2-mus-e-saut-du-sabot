@@ -109,30 +109,80 @@ border-radius:50%;
     
 }
 
-.btnvillage{
-    border: 0;
-    line-height: 4;
-    padding:26px 0px;
-    font-size: 1rem;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
-    margin-left: 2px;
-    margin-top: 1px;
-    color: #000000;
-    /*text-shadow: 1px 1px 1px #000;*/
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
-    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+.menu-container {
+    position: relative;
+    display: inline-block;
     width: 17%;
-    background-image: url(https://api.iconify.design/ant-design:slack-outlined.svg?color=%23000000);
-    background-repeat: no-repeat;
-    background-position: 50% 10px;
-    background-size: 41px;
+    cursor: pointer;
+    
+  }
+  
+  #menu-btn {
     
     
-}
+  
+      border: 0;
+      line-height: 4;
+      padding:24px 0px;
+      padding-right: 10px;
+      font-size: 1rem;
+      
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-style: italic;
+      
+      margin-top: 1px;
+      color: #000000;
+      cursor: pointer;
+      /*text-shadow: 1px 1px 1px #000;*/
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+      /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+      
+      background-image: url(https://api.iconify.design/simple-line-icons:menu.svg?color=%2300000);
+      background-repeat: no-repeat;
+      background-position: left 62% bottom 65px;
+      
+      width: 30px;
+      background-size: 35px;
+      
+  }
+  
+  #menu-btn span {
+    height: 3px;
+    width: 45px;
+    background-color: white;
+    margin: 4px 0;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 3;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    z-index: 30;
+  }
+  
+  .menu-container:hover .dropdown-content {
+    display: block;
+    margin-top:-240px;
+    z-index: 30;
+  }
 
 .btncollec{
     border: 0;
@@ -189,6 +239,20 @@ footer{
     text-align: center;
 }
 
+@media screen and (max-width:545px) {
+
+
+    .menu-container:hover .dropdown-content {
+        display: block;
+        margin-top:-250px;
+        margin-left: -60px;
+        z-index: 30;
+      }
+
+
+
+}
+
 @media screen and (max-width:913px) and (min-width:819px) {
     .btn{
         width: 500px;
@@ -218,11 +282,19 @@ footer{
 
     <footer>
         <div id="piedpage">
-            <a href=".//plan/chatgpt2 - Copie - Copie.html"><button class="btnplan" type="button" style="cursor: pointer;margin-right:-15px;">Plan</button></a>
+            <a href=".//plan/chatgpt2 - Copie - Copie - Copie.html"><button class="btnplan" type="button" style="cursor: pointer;margin-right:-15px;">Plan</button></a>
             <a href="page-transition-collection.html"><button class="btncollec" type="button" style="cursor: pointer; width: 23%; padding-left: 12px;">Historique</button></a>
             <a href="testMp3d.html"><button class="btnvisite" type="button"style="cursor: pointer;">Visite</button></a>
             <a href="infos.html"><button class="btninfo" type="button"style="cursor: pointer;">Infos</button></a>
-            <a href="village.html"><button class="btnvillage" type="button" style="cursor: pointer; margin-right:9px;">Evenement</button></a>
+            <div class="menu-container">
+                <button id="menu-btn">Plus</button>
+                <div id="menu-dropdown" class="dropdown-content">
+                  <a href="page1.html">Carte Interactive</a>
+                  <a href="page2.html">Archives</a>
+                  <a href="../village.html">Evenements</a>
+                </div>
+              </div>
+        </div>
         </div>
     </footer>
 </body>
