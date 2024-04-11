@@ -47,7 +47,7 @@ html, body {
     width: 20px;
     height: 20px;
     border: 2px solid;
-    margin-left: 160px;
+    margin-left: 100px;
     margin-bottom: 3px;
 }
 #red-square {
@@ -1226,7 +1226,7 @@ display: block;
                             padding: 10px;
                             pointer-events:none;
                             position: absolute;
-                            width: 850%;
+                            width: 870%;
                             -webkit-transform: translateY(10px);
                               -moz-transform: translateY(10px);
                               -ms-transform: translateY(10px);
@@ -1327,7 +1327,7 @@ display: block;
                                 padding: 10px;
                                 pointer-events:none;
                                 position: absolute;
-                                width: 850%;
+                                width: 900%;
                                 -webkit-transform: translateY(10px);
                                   -moz-transform: translateY(10px);
                                   -ms-transform: translateY(10px);
@@ -1757,7 +1757,7 @@ footer{
         width: 20px;
         height: 20px;
         border: 2px solid;
-        margin-left: 130px;
+        margin-left: 70px;
         margin-bottom: 3px;
     }
 
