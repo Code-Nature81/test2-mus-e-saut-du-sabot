@@ -63,7 +63,7 @@ html, body {
 
 h6{
     margin-left:149%;
-    width:170px;
+    width:200px;
     font-size: 14px;
 }
 
@@ -1327,7 +1327,7 @@ display: block;
                                 padding: 10px;
                                 pointer-events:none;
                                 position: absolute;
-                                width: 900%;
+                                width: 930%;
                                 -webkit-transform: translateY(10px);
                                   -moz-transform: translateY(10px);
                                   -ms-transform: translateY(10px);
