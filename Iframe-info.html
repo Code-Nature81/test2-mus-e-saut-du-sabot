@@ -128,7 +128,7 @@ header{
       /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
       /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
       
-      background-image: url(https://api.iconify.design/simple-line-icons:menu.svg?color=%2300000);
+      background-image: url(https://api.iconify.design/simple-line-icons:menu.svg);
       background-repeat: no-repeat;
       background-position: left 62% bottom 65px;
       
@@ -231,16 +231,117 @@ iframe{
     overflow-x: hidden;
 }
 
-@media screen and (max-width:545px) {
+@media screen and (max-width:342px) {
+
+    .btnplan {
+    
+        
+        font-size: 0.8rem;
+        
+        
+    }
+    
+    .btninfo{
+      
+        font-size: 0.8rem;
+        
+        
+        
+    }
+
+    #menu-btn{
+        padding-right: 3px;
+        font-size: 0.8rem;
+        background-position: left 62% bottom 60px;
+        background-size: 30px;
+
+      
+
+    }
+    
+    .btnvillage{
+       
+        font-size: 0.8rem;
+      
+        
+        
+    }
+    
+    .btncollec{
+       
+        font-size: 0.8rem;
+      
+        
+        
+    }
+    
+    .btnvisite{
+      
+        font-size: 0.8rem;
+       
+        
+        
+    }
 
 
-    .menu-container:hover .dropdown-content {
-        display: block;
-        margin-top:-250px;
-        margin-left: -60px;
-        z-index: 30;
-      }
 
+}
+
+@media screen and (max-width:275px) {
+
+    .btnplan {
+    
+        font-size: 0.6rem;
+       
+        background-size: 24px;
+        
+    }
+    
+    .btninfo{
+        
+        font-size: 0.6rem;
+       
+        background-size: 24px;
+        
+        
+    }
+
+    #menu-btn{
+        padding-right: 2px;
+        font-size: 0.6rem;
+        background-position: left 55% bottom 55px;
+       
+      
+        background-size: 24px;
+
+    }
+    
+    .btnvillage{
+       
+        font-size: 0.6rem;
+     
+        background-size: 34px;
+        
+        
+    }
+    
+    .btncollec{
+        
+        font-size: 0.6rem;
+      
+        background-size: 30px;
+        
+        
+    }
+    
+    .btnvisite{
+       
+        font-size: 0.6rem;
+      
+        background-size: 30px;
+        
+        
+    }
 
 
 }
@@ -249,7 +350,7 @@ iframe{
 <body>
     <header>
         <div id="header">
-            <a href="infos.html"><img src="https://api.iconify.design/cil:arrow-circle-left.svg?color=%23b8860b" style=" width: 30px; margin-left: 10px;margin-top: 10px;"></a>
+            <a href=""><img src="https://api.iconify.design/cil:arrow-circle-left.svg?color=%23292929" style=" width: 30px; margin-left: 10px;margin-top: 10px;"></a>
             <h1 style="margin-top: -40px;">Page informations</h1>
 
         </div>
@@ -261,17 +362,16 @@ iframe{
         <div id="piedpage">
             <a href=".//plan/chatgpt2 - Copie - Copie - Copie.html"><button class="btnplan" type="button" style="cursor: pointer;margin-right:-15px;">Plan</button></a>
             <a href="page-transition-collection.html"><button class="btncollec" type="button" style="cursor: pointer; width: 23%; padding-left: 12px;">Historique</button></a>
-            <button class="btnvisite" type="button"style="cursor: pointer;">Visite</button>
-            <a href="infos.html"><button class="btninfo" type="button"style="cursor: pointer;">Infos</button></a>
+            <a href="./3dvista(1)/index.htm"><button class="btnvisite" type="button"style="cursor: pointer;">Visite</button></a>
+            <a href="Iframe-info.html"><button class="btninfo" type="button"style="cursor: pointer;">Infos</button></a>
             <div class="menu-container">
                 <button id="menu-btn">Plus</button>
                 <div id="menu-dropdown" class="dropdown-content">
                   <a href="page1.html">Carte Interactive</a>
                   <a href="page2.html">Archives</a>
-                  <a href="../village.html">Evenements</a>
+                  <a href=".//village.html">Evenements</a>
                 </div>
               </div>
-        </div>
         </div>
     </footer>
 </body>
