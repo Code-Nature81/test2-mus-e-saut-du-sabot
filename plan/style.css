@@ -51,13 +51,13 @@ html, body {
     margin-bottom: 3px;
 }
 #red-square {
-    border-color: red;
+    border-color: rgb(166, 28, 28);
     margin-bottom: -45px;
     
 }
 
 #blue-square {
-    border-color: rgb(0, 238, 255);
+    border-color: rgb(17, 185, 197);
     
 }
 
