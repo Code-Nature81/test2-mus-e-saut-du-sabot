@@ -168,7 +168,8 @@ header{
   
   .menu-container:hover .dropdown-content {
     display: block;
-    margin-top:-240px;
+    margin-top:-190px;
+    margin-left: 60px;
     z-index: 30;
   }
 
@@ -346,6 +347,30 @@ iframe{
 
 }
 
+@media screen and (max-width:1026px) and (min-width:681px) {
+
+    .menu-container:hover .dropdown-content {
+        display: block;
+        margin-top:-200px;
+        margin-left: 28px;
+        z-index: 30;
+      }
+      
+    
+}
+
+@media screen and (max-width:680px) and (min-width:180px) {
+
+    .menu-container:hover .dropdown-content {
+        display: block;
+        margin-top:-188px;
+        margin-left: -37px;
+        z-index: 30;
+      }
+      
+    
+}
+
 </style>
 <body>
     <header>
@@ -367,7 +392,7 @@ iframe{
             <div class="menu-container">
                 <button id="menu-btn">Plus</button>
                 <div id="menu-dropdown" class="dropdown-content">
-                  <a href="page1.html">Carte Interactive</a>
+                 
                   <a href="page2.html">Archives</a>
                   <a href=".//village.html">Evenements</a>
                 </div>
