@@ -1711,6 +1711,40 @@ footer{
 
 }
 
+@media screen and (max-width:505px) {
+
+    h3{
+        font-size: 15px;
+    }
+
+    
+       
+
+
+}
+
+@media screen and (max-width:376px) {
+
+    h3{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:336px) {
+
+    h3{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:280px) {
+
+    h3{
+        font-size: 9px;
+    }
+}
+
+
 @media screen and (max-width:1026px) and (min-width:681px) {
 
     .menu-container:hover .dropdown-content {
