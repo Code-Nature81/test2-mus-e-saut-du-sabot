@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evenementiel</title>
-</head>
-
-<style>
-
-    
-html, body {
-	margin: 0;
-	padding: 0;
-	height: 100vh;
-    overflow: hidden;
-    background-color: black;
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 header{
@@ -38,35 +27,36 @@ header{
     margin-top: 20px;
 }
 
-.image {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
+h1{
+    font-size: 4rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-align: center;
 }
 
-.btncircuit{
-  /*font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 25px;
-  /*color: rgb(73, 180, 226);*/
- 
-  
-  background-color: #000000;
-  border: 1px solid darkgoldenrod;
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-  padding: 10px 10px;
-  cursor: pointer;
-  
-width:300px;
-height:300px;
-border-radius:50%;
-
+.button{
+    
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    height: 2.5rem;
+    padding-top: 1.3rem;
+    width: 15rem;
+    text-align: center;
+    color: #fff;
+    border-color: #fff; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    /*text-decoration: none ;*/
+    transform: translateX(-50%);
 }
+
 
 
 #piedpage {
@@ -139,43 +129,34 @@ border-radius:50%;
   #menu-btn {
     
     
-    border: 0;
-    line-height: 4;
-    padding:24px 0px;
-    padding-right: 10px;
-    font-size: 1rem;
-    
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
-    
-    margin-top: 1px;
-    color: #ffffff;
-    cursor: pointer;
-    /*text-shadow: 1px 1px 1px #000;*/
-    border-radius: 10px;
-    background-color: rgb(0, 0, 0);
-    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
-    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
-    
-    background-image: url(https://api.iconify.design/simple-line-icons:menu.svg?color=%23ffffff);
-    background-repeat: no-repeat;
-    background-position: left 62% bottom 65px;
-    
-    width: 30px;
-    background-size: 35px;
+  
+      border: 0;
+      line-height: 4;
+      padding:24px 0px;
+      padding-right: 10px;
+      font-size: 1rem;
+      
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-style: italic;
+      
+      margin-top: 1px;
+      color: #ffffff;
+      cursor: pointer;
+      /*text-shadow: 1px 1px 1px #000;*/
+      border-radius: 10px;
+      background-color: rgb(0, 0, 0);
+      /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+      /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+      
+      background-image: url(https://api.iconify.design/simple-line-icons:menu.svg?color=%23ffffff);
+      background-repeat: no-repeat;
+      background-position: left 62% bottom 65px;
+      
+      width: 30px;
+      background-size: 35px;
       
   }
-
-  .btnEvent{
-    border:0;
-    font-size: 1rem;
-    color: darkgoldenrod;
-    /*text-shadow: 1px 1px 1px #000;*/
-   
-    background-color: rgba(255, 255, 255, 0);
-
-}
   
   #menu-btn span {
     height: 3px;
@@ -223,7 +204,7 @@ border-radius:50%;
     font-style: italic;
     margin-left: 2px;
     margin-top: 1px;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     /*text-shadow: 1px 1px 1px #000;*/
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
@@ -263,11 +244,19 @@ border-radius:50%;
     
 }
 
+.btnarchive{
+    border:0;
+    font-size: 1rem;
+    color: darkgoldenrod;
+    /*text-shadow: 1px 1px 1px #000;*/
+   
+    background-color: rgba(255, 255, 255, 0);
+
+}
 
 footer{
     text-align: center;
 }
-
 @media screen and (max-width:342px) {
 
     .btnplan {
@@ -381,7 +370,22 @@ footer{
     }
 
 
+}
 
+@media(max-width:800px){
+    h1{
+        font-size: 1.2rem;
+    }
+
+    .button{
+        width: 12rem;
+    }
+}
+
+@media(max-height: 700px){
+    .button{
+        top: 40%;
+    }
 }
 
 @media screen and (max-width:1026px) and (min-width:681px) {
@@ -407,48 +411,3 @@ footer{
       
     
 }
-</style>
-
-<body style="overflow: hidden;">
-
-    <header>
-        <div id="header">
-            <a href=""><img src="" style="padding-top: 10px; width: 30px;"></a>
-            <h2 style="margin-top: -8px;">Evenementiel</h2>
-
-        </div>
-    </header>
-
-   
-
-    
-    
-
-    <iframe width="100%" height="81%" frameborder="0" allowfullscreen src="https://musee-saut-du-tarn.com/agenda/"></iframe>
-
-
-
-
-
-
-
-
-
-    <footer>
-        <div id="piedpage">
-            <a href="./plan/index.html"><button class="btnplan" type="button" style="cursor: pointer;margin-right:-15px;">Plan</button></a>
-            <a href="page-transition-collection.html"><button class="btncollec" type="button" style="cursor: pointer; width: 23%; padding-left: 12px;">Historique</button></a>
-            <a href="visite-p1.html"><button class="btnvisite" type="button"style="cursor: pointer;">Visite</button></a>
-            <a href="Iframe-info.html"><button class="btninfo" type="button"style="cursor: pointer;">Infos</button></a>
-            <div class="menu-container">
-                <button id="menu-btn">Plus</button>
-                <div id="menu-dropdown" class="dropdown-content">
-                  
-                  <a href="archives.html">Archives</a>
-                  <a href=".//village.html"><button class="btnEvent" type="button"style="cursor: pointer;">Evenements</button></a>
-                </div>
-              </div>
-        </div>
-    </footer>
-</body>
-</html>  
