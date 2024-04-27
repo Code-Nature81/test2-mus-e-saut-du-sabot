@@ -83,6 +83,11 @@ header{
     margin-top: 10px;
 }
 
+#header a{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -220,7 +225,7 @@ main{
     background-color: rgb(255, 255, 255);
     /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
     /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
-    width: 17%;
+    width: 24%;
     background-image: url(https://api.iconify.design/teenyicons:floorplan-solid.svg?color=%23b8860b);
     background-repeat: no-repeat;
     background-position: 50% 13px;
@@ -244,11 +249,11 @@ main{
     background-color: rgb(255, 255, 255);
     /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
     /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
-    width: 17%;
-    background-image: url(https://api.iconify.design/clarity:help-info-solid.svg?color=%23000000);
+    width: 24%;
+    background-image: url(https://api.iconify.design/material-symbols:call.svg?color=%23000000);
     background-repeat: no-repeat;
     background-position: 50% 15px;
-    background-size: 28px;
+    background-size: 32px;
     
     
 }
@@ -346,7 +351,7 @@ main{
     background-color: rgb(255, 255, 255);
     /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
     /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
-    width: 17%;
+    width: 24%;
     background-image: url(https://api.iconify.design/simple-icons:musescore.svg?color=%23000000);
     background-repeat: no-repeat;
     background-position: 50% 10px;
@@ -371,7 +376,7 @@ main{
     background-color: rgb(255, 255, 255);
     /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
     /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
-    width: 17%;
+    width: 24%;
     background-image: url(https://api.iconify.design/fluent-mdl2:video-360-generic.svg?color=%23000000);
     background-repeat: no-repeat;
     background-position: 50% 10px;
@@ -1642,13 +1647,15 @@ footer{
     }
     
     .btninfo{
-        
+            
         font-size: 0.6rem;
-       
+       background-position: 22% 10px ;
         background-size: 24px;
+        padding-right:35px;
         
         
     }
+
 
     #menu-btn{
         padding-right: 2px;
