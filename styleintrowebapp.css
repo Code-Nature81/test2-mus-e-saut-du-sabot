@@ -53,8 +53,9 @@
     }
     
     h1{
-        font-size: 3rem;
+        
         color: #fff;
+     
     
     }
     
@@ -324,11 +325,7 @@
     }
     
     @media(max-width:800px){
-        h1{
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-    
+       
         .button{
             width: 12rem;
         }
@@ -369,11 +366,25 @@
             width: 30%;
         }
 
-        h1{
-            font-size: 25px;
-        }
-
+        
 
         
     }
+
+    @media screen and (max-width:365px) {
+
+        h1{
+            font-size: 30px;
+        }
+        
+    }
+    @media screen and (max-width:301px) {
+
+        h1{
+            font-size: 25px;
+            margin-top: 10px;
+        }
+        
+    }
+    
     
