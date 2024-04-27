@@ -1,0 +1,379 @@
+*, *:before, *:after 
+    { box-sizing: border-box; 
+    margin:0px;
+        padding:0px;}
+    
+    body, html{
+        padding: 0;
+        margin: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 100%;
+        height: 100%;
+        /*overflow-x: hidden;*/
+        background-color: black;
+        z-index: 1;
+    }
+    
+    
+    #fond img{
+        margin: auto;
+        display: block;
+        width: 35%;
+        margin-top: 10%;
+       
+        
+    
+    }
+    
+    .ptexte{
+        font-size: 18px;
+    }
+    
+    p{
+        color: white;
+        padding: 5px;
+    }
+    
+    .container {
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .image-container {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 30px;
+        
+        
+    }
+    main{
+        display: block;
+        
+        
+    }
+    
+    h1{
+        font-size: 3rem;
+        color: #fff;
+    
+    }
+    
+    .button{
+        
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        height: 2.5rem;
+        padding-top: 1.3rem;
+        width: 15rem;
+        text-align: center;
+        color: #fff;
+        border-color: #fff; 
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        /*text-decoration: none ;*/
+        transform: translateX(-50%);
+    }
+    
+    
+    
+    #piedpage {
+        position: absolute;
+        bottom: 0; left: 0;
+        width: 100%;
+        background-color: #000000;;
+        height: 85px;
+        border: #000000 solid 1px;
+        border-bottom: #000000;
+    }
+    .btnplan {
+        
+        border: 0;
+        line-height: 4;
+        padding:26px 10px;
+        font-size: 1rem;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+        margin-left: 2px;
+        margin-top: 1px;
+        color: #ffffff;
+        /*text-shadow: 1px 1px 1px #000;*/
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+        /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+        width: 24%;
+        background-image: url(https://api.iconify.design/teenyicons:floorplan-solid.svg?color=%23ffffff);
+        background-repeat: no-repeat;
+        background-position: 50% 13px;
+        background-size: 32px;
+        
+    }
+    
+    .btninfo{
+        border: 0;
+        line-height: 4;
+        padding:26px 10px;
+        font-size: 1rem;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+        margin-left: 2px;
+        margin-top: 1px;
+        color: #ffffff;
+        /*text-shadow: 1px 1px 1px #000;*/
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+        /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+        width: 24%;
+        background-image: url(https://api.iconify.design/material-symbols:call.svg?color=%23ffffff);
+        background-repeat: no-repeat;
+        background-position: 50% 15px;
+        background-size: 32px;
+        
+        
+    }
+    
+    
+    .btncollec{
+        border: 0;
+        line-height: 4;
+        padding:26px 10px;
+        font-size: 1rem;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+        margin-left: 2px;
+        margin-top: 1px;
+        color: rgb(255, 255, 255);
+        /*text-shadow: 1px 1px 1px #000;*/
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+        /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+        width: 24%;
+        background-image: url(https://api.iconify.design/simple-icons:musescore.svg?color=%23ffffff);
+        background-repeat: no-repeat;
+        background-position: 50% 10px;
+        background-size: 35px;
+        
+        
+    }
+    
+    .btnvisite{
+        border: 0;
+        line-height: 4;
+        padding:26px 10px;
+        font-size: 1rem;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+        margin-left: 2px;
+        margin-top: 1px;
+        color: #ffffff;
+        /*text-shadow: 1px 1px 1px #000;*/
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+        /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+        width: 24%;
+        background-image: url(https://api.iconify.design/fluent-mdl2:video-360-generic.svg?color=%23ffffff);
+        background-repeat: no-repeat;
+        background-position: 50% 10px;
+        background-size: 35px;
+        
+        
+    }
+    
+    #piedpage {
+        position: absolute;
+        bottom: 0; left: 0;
+        width: 100%;
+        background-color: #000000;;
+        height: 85px;
+        border: #ffffff solid 1px;
+        border-bottom: #000000;
+        position:fixed;
+        z-index: 30;
+    }
+    
+    footer{
+        text-align: center;
+    }
+
+    @media screen and (max-width:769px){
+
+        #fond img{
+       
+        width: 80%;
+        }
+    }
+    @media screen and (max-width:342px) {
+    
+        .btnplan {
+        
+            
+            font-size: 0.8rem;
+            
+            
+        }
+        
+        .btninfo{
+          
+            font-size: 0.8rem;
+            
+            
+            
+        }
+    
+        
+        .btnvillage{
+           
+            font-size: 0.8rem;
+          
+            
+            
+        }
+        
+        .btncollec{
+           
+            font-size: 0.8rem;
+          
+            
+            
+        }
+        
+        .btnvisite{
+          
+            font-size: 0.8rem;
+            background-position: 74% 10px ;
+            padding-left:28px;
+            
+            
+        }
+    
+    
+    
+    }
+    
+    @media screen and (max-width:275px) {
+     h1{
+        margin-top: -50px;
+     }
+        .btnplan {
+        
+            font-size: 0.6rem;
+           
+            background-size: 24px;
+            
+        }
+        
+        .btninfo{
+            
+            font-size: 0.6rem;
+           background-position: 22% 10px ;
+            background-size: 24px;
+            padding-right:35px;
+            
+            
+        }
+    
+        
+        
+       
+        
+        .btncollec{
+            
+            font-size: 0.6rem;
+            background-position: 56% 10px ;
+            background-size: 25px;
+            
+            
+            
+        }
+        
+        .btnvisite{
+           
+            font-size: 0.6rem;
+          
+            background-size: 25px;
+    
+            padding-right: -15px;
+            
+            
+        }
+    
+    
+    }
+    
+    @media screen and (max-width:251px) {
+    
+        .btnvisite{
+          
+            font-size: 0.8rem;
+            background-position: 74% 17px ;
+            padding-left:18px;
+            
+            
+        }
+        
+    }
+    
+    @media(max-width:800px){
+        h1{
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+    
+        .button{
+            width: 12rem;
+        }
+    }
+    
+    @media(max-height: 700px){
+        .button{
+            top: 40%;
+        }
+    }
+    
+    @media screen  and (min-width:485px) {
+
+        #fond img{
+            margin-top: 10px;
+            width: 60%;
+        }
+
+
+        
+    }
+    
+    @media screen  and (min-width:669px) {
+
+        #fond img{
+            margin-top: 10px;
+            width: 50%;
+        }
+
+
+        
+    }
+
+    @media screen  and (min-width:800px) {
+
+        #fond img{
+            margin-top: 10px;
+            width: 30%;
+        }
+
+        h1{
+            font-size: 25px;
+        }
+
+
+        
+    }
+    
